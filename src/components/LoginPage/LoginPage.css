@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+
+.container_login{
+    margin-top: 10vw;
+    width: 400px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+  }
+
+
+
+
+
