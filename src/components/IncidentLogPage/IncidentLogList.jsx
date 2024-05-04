@@ -46,12 +46,12 @@ export default function IncidentList() {
                 </Row>
                 <Row>
                     <CardBody>
-                        <Table>
+                        <Table >
                             <thead>
                             <tr>
-                                <th>№</th>
-                                <th>Инцидент</th>
-                                <th>Дата изменения</th>
+                                <th style={{width: '10%'}}>№</th>
+                                <th style={{width: '10%'}}>Инцидент</th>
+                                <th style={{width: '20%'}}>Дата изменения</th>
                                 <th>Описание изменения</th>
                             </tr>
                             </thead>

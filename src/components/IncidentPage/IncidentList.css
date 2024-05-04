@@ -13,8 +13,27 @@ body {
 }
 
 table {
-    width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.fixed {
+    table-layout: fixed;
+}
+table.fixed td {
+    overflow: hidden;
+}
+
+
+table th {
+    width: auto;
+    text-align: center;
+}
+
+table td {
+    overflow: auto;
+    text-align: center;
 }
 
 th,

@@ -300,6 +300,7 @@ export default function IncidentList() {
             {
                 Header: '№',
                 accessor: 'id',
+                class: 'example'
             },
             {
                 Header: 'Тип',
@@ -341,12 +342,12 @@ export default function IncidentList() {
                 Header: "Действия",
                 Cell: ({ cell }) => (
                     <div>
-                    <Button id={cell.row.values.id} onClick={handleShow} className='btn-success me-2'>
-                        <PencilSquare className='mb-1'/>
-                    </Button>
-                    <Button id={cell.row.values.id} onClick={handleShowDelete} className='btn-danger'>
-                        <Trash className='mb-1'/>
-                    </Button>
+                        <Button id={cell.row.values.id} onClick={handleShow} className='btn-success me-2'>
+                            <PencilSquare className='mb-1'/>
+                        </Button>
+                        <Button id={cell.row.values.id} onClick={handleShowDelete} className='btn-danger'>
+                            <Trash className='mb-1'/>
+                        </Button>
                     </div>
                 )
             }
@@ -412,7 +413,7 @@ export default function IncidentList() {
                                     <Form.Text className="text-muted text-center">Решен от и до</Form.Text>
                                 </Col>
                                 <Col>
-                                <Form.Control value={dateResolvedToFilter} type="date" name="dateResolvedToFilter" onChange={e => setDateResolvedToFilter(e.target.value)} />
+                                    <Form.Control value={dateResolvedToFilter} type="date" name="dateResolvedToFilter" onChange={e => setDateResolvedToFilter(e.target.value)} />
                                 </Col>
                                 <Col>
                                     <Button className="w-100" onClick={handleFilters}>Применить фильтр</Button>
@@ -426,7 +427,7 @@ export default function IncidentList() {
                 </Row>
                 <Row>
                     <CardBody>
-                    <SortableTable columns={columns} data={data}/>
+                        <SortableTable columns={columns} data={data}/>
                     </CardBody>
                 </Row>
             </Col>
