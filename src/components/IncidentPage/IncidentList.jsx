@@ -329,8 +329,7 @@ export default function IncidentList() {
             },
             {
                 Header: 'Решен',
-                accessor: 'dateResolved',
-                sortType: 'string'
+                accessor: 'dateResolved'
             },
             {
                 Header: 'Ответственный',
